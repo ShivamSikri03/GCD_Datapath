@@ -1,0 +1,176 @@
+$date
+	Sun Apr 20 21:32:21 2025
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module TEST_GCD $end
+$var wire 1 ! sel_in $end
+$var wire 1 " sel2 $end
+$var wire 1 # sel1 $end
+$var wire 1 $ done $end
+$var wire 1 % LdB $end
+$var wire 1 & LdA $end
+$var wire 1 ' LT $end
+$var wire 1 ( GT $end
+$var wire 1 ) EQ $end
+$var reg 1 * clk $end
+$var reg 16 + data_in [15:0] $end
+$var reg 1 , start $end
+$scope module CTR $end
+$var wire 1 * clk $end
+$var wire 16 - data_in [15:0] $end
+$var wire 1 , start $end
+$var wire 1 ' LT $end
+$var wire 1 ( GT $end
+$var wire 1 ) EQ $end
+$var parameter 3 . s0 $end
+$var parameter 3 / s1 $end
+$var parameter 3 0 s2 $end
+$var parameter 3 1 s3 $end
+$var parameter 3 2 s4 $end
+$var parameter 3 3 s5 $end
+$var reg 1 & LdA $end
+$var reg 1 % LdB $end
+$var reg 1 $ done $end
+$var reg 1 # sel1 $end
+$var reg 1 " sel2 $end
+$var reg 1 ! sel_in $end
+$var reg 3 4 state [2:0] $end
+$upscope $end
+$scope module DP $end
+$var wire 1 & LdA $end
+$var wire 1 % LdB $end
+$var wire 1 * clk $end
+$var wire 16 5 data_in [15:0] $end
+$var wire 1 # sel1 $end
+$var wire 1 " sel2 $end
+$var wire 1 ! sel_in $end
+$var wire 16 6 sub_out [15:0] $end
+$var wire 16 7 bus [15:0] $end
+$var wire 16 8 Y [15:0] $end
+$var wire 16 9 X [15:0] $end
+$var wire 1 ' LT $end
+$var wire 1 ( GT $end
+$var wire 1 ) EQ $end
+$var wire 16 : Bout [15:0] $end
+$var wire 16 ; Aout [15:0] $end
+$scope module A $end
+$var wire 1 * clk $end
+$var wire 1 & ld $end
+$var wire 16 < Din [15:0] $end
+$var reg 16 = Dout [15:0] $end
+$upscope $end
+$scope module B $end
+$var wire 1 * clk $end
+$var wire 1 % ld $end
+$var wire 16 > Din [15:0] $end
+$var reg 16 ? Dout [15:0] $end
+$upscope $end
+$scope module M1 $end
+$var wire 16 @ in1 [15:0] $end
+$var wire 16 A in2 [15:0] $end
+$var wire 1 # sel $end
+$var reg 16 B Dout [15:0] $end
+$upscope $end
+$scope module M2 $end
+$var wire 16 C in1 [15:0] $end
+$var wire 16 D in2 [15:0] $end
+$var wire 1 " sel $end
+$var reg 16 E Dout [15:0] $end
+$upscope $end
+$scope module M3 $end
+$var wire 16 F in2 [15:0] $end
+$var wire 1 ! sel $end
+$var wire 16 G in1 [15:0] $end
+$var reg 16 H Dout [15:0] $end
+$upscope $end
+$scope module cmp $end
+$var wire 1 I clk $end
+$var wire 16 J in1 [15:0] $end
+$var wire 16 K in2 [15:0] $end
+$var reg 1 ) eq $end
+$var reg 1 ( gt $end
+$var reg 1 ' lt $end
+$upscope $end
+$scope module sub $end
+$var wire 16 L X [15:0] $end
+$var wire 16 M Y [15:0] $end
+$var reg 16 N out [15:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+b101 3
+b100 2
+b11 1
+b10 0
+b1 /
+b0 .
+$end
+#0
+$dumpvars
+bx N
+bx M
+bx L
+bx K
+bx J
+zI
+bx H
+bx G
+bx F
+bx E
+bx D
+bx C
+bx B
+bx A
+bx @
+bx ?
+bx >
+bx =
+bx <
+bx ;
+bx :
+bx 9
+bx 8
+bx 7
+bx 6
+bx 5
+bx 4
+bx -
+x,
+bx +
+0*
+x)
+x(
+x'
+x&
+x%
+x$
+x#
+x"
+x!
+$end
+#2
+1,
+#5
+b0 4
+0%
+0&
+1*
+#12
+b10001111 +
+b10001111 -
+b10001111 5
+b10001111 F
+#22
+b1001110 +
+b1001110 -
+b1001110 5
+b1001110 F
+#1002
