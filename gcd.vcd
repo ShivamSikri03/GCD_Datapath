@@ -1,5 +1,5 @@
 $date
-	Sun Apr 20 21:32:21 2025
+	Sun Apr 20 22:03:46 2025
 $end
 $version
 	Icarus Verilog
@@ -89,17 +89,16 @@ $var wire 16 G in1 [15:0] $end
 $var reg 16 H Dout [15:0] $end
 $upscope $end
 $scope module cmp $end
-$var wire 1 I clk $end
-$var wire 16 J in1 [15:0] $end
-$var wire 16 K in2 [15:0] $end
+$var wire 16 I in1 [15:0] $end
+$var wire 16 J in2 [15:0] $end
 $var reg 1 ) eq $end
 $var reg 1 ( gt $end
 $var reg 1 ' lt $end
 $upscope $end
 $scope module sub $end
-$var wire 16 L X [15:0] $end
-$var wire 16 M Y [15:0] $end
-$var reg 16 N out [15:0] $end
+$var wire 16 K X [15:0] $end
+$var wire 16 L Y [15:0] $end
+$var reg 16 M out [15:0] $end
 $upscope $end
 $upscope $end
 $upscope $end
@@ -115,12 +114,11 @@ b0 .
 $end
 #0
 $dumpvars
-bx N
 bx M
 bx L
 bx K
 bx J
-zI
+bx I
 bx H
 bx G
 bx F
