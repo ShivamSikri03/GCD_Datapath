@@ -1,0 +1,32 @@
+module TEST_GCD;
+    reg [15:0] data_in;
+    reg clk,start;
+    wire done;
+
+    reg [15:0] A,B;
+
+    gcd_datapath DP(LT,GT,EQ,LdA,LdB,sel1,sel2,sel_in,data_in,clk);
+    gcd_controller CTR(LdA,LdB,sel1,sel2,sel_in,done,LT,GT,EQ,data_in,start,clk);
+
+    initial begin 
+        clk = 1'b0;
+        #2 start = 1'b1;
+        #1000 $finish;
+    end
+
+    always @(*) begin
+        #5 clk=~clk;
+    end
+
+    initial begin
+        #12 data_in = 143;
+        #10 data_in = 78;
+    end
+
+    initial begin
+        $monitor ($time, " %d , %b",DP.Aout,done);
+        $dumpfile("gcd.vcd");
+        $dumpvars(0,TEST_GCD);
+    end
+
+endmodule
